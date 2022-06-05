@@ -5,39 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Envite | Online services platform</title>
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
 </head>
-<div class="navigation">
-    <div class="container">
-        <img alt="" data-src="https://envite.live/wp-content/themes/envite/img/logo-beta.svg" class=" lazyloaded" src="https://envite.live/wp-content/themes/envite/img/logo-beta.svg">
-    </div>
-    <div class="menu">
-        <ul class="menu">
-            <li><a href="#">
-                <span>Features</span>
-            </a></li>
-        <li><a href="#">
-            <span> Blogs </span>
-        </a></li>
-        <li><a href="#">
-            <span> About Us </span>
-        </a></li>
-        <li><a href="#">
-            <span> FAQs </span>
-        </a></li>
-        </div>
-        <div class="log-in">
-             <a href="https://envite.live/platform/login" class="btn login__class">LOG IN</a>
-        </div>
-        <!-- resigration -->
-            <div class="registration__box">
-                <!-- <a href="https://envite.live/platform/login" class="btn login__class">LOG IN</a> -->
-                <a href="https://envite.live/platform/signup" class="btn started__class">GET STARTED</a>
-            </div>
-        </div>
-</div>
-</div>
+
 <body>
+    <header>
+        <div class="navigation">
+            <div class="header-nav">
+                 <!-- logo -->
+                <div class="logo-wrapper">
+                    <img alt="Envite-logo" data-src="https://envite.live/wp-content/themes/envite/img/logo-beta.svg" class="lazyloaded logo" src="https://envite.live/wp-content/themes/envite/img/logo-beta.svg">
+                </div>
+                <!-- main navigation items -->
+                <div class="menu">
+                    <ul class="menu-list">
+                        <li>
+                            <a href="#">
+                                <span>Features</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Pricing</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Blog</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>About us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>FAQ</span>
+                            </a>
+                        </li>
+                </div>
+            </div>
+           
+            
+    
+    
+            <!-- this is header side items - get started && login -->
+            <div class="header-side-items">
+                <div class="log-in">
+                    <a href="https://envite.live/platform/login" class="btn login">LOG IN</a>
+                </div>
+                <!-- resigration -->
+                <div class="registration-box">
+                    <!-- <a href="https://envite.live/platform/login" class="btn login__class">LOG IN</a> -->
+                    <a href="https://envite.live/platform/signup" class="btn get-started">GET STARTED</a>
+                </div>
+            </div>
+            
+        </div>
+    
+    </header>
+   
+
     <h1>The easiest way to sell & manage
         <br>
         your online services
@@ -52,16 +82,21 @@
             <input type="radio" name="radio-btn" id="radio2">
             <input type="radio" name="radio-btn" id="radio3"> 
             <!-- radio buttons end-->
+
+
             <!-- slide images start -->
-            <div class="slide-first">
+
+            <div class="slide first">
                 <img src="./Homepage_image01_2Nov 1.png" alt="img1">
-        </div> 
-    <div class="slider-second"> 
-         <img src="./Homepage_image02_1Nov 1.png" alt="img2">
-    </div> 
-    <div class="slider-third">
-        <img src="./Homepage_image03_2Nov_b 1.png" alt="img3">
-    </div>
+            </div> 
+
+            <div class="slider"> 
+                <img src="./Homepage_image02_1Nov 1.png" alt="img2">
+            </div> 
+
+            <div class="slider">
+                <img src="./Homepage_image03_2Nov_b 1.png" alt="img3">
+            </div>
     <!-- image slider end -->
     </div>
 </div>
@@ -83,7 +118,7 @@
     <script type="text/javascript">
         var counter = 1;
         setInterval(function(){
-            document:getElementById('radio' + counter). checked = true;
+            document.getElementsByClassName('manual-btn' + counter).checked = true;
             counter++;
             if(counter > 3){
                 counter = 1;
@@ -165,5 +200,13 @@
      <p>Flexible appointment scheduling calendar</p>
      <p class="text2">Set up your schedule to share your availability with potential clients and look professional.</p>
  </div>
+
+
+ <footer>
+    <div class="footer-container"></div>
+    <div class="footer-container"></div>
+    <div class="footer-container"></div>
+    <div class="footer-container"></div>
+ </footer>
 </body>
 </html>
