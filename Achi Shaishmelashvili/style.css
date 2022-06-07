@@ -1,3 +1,4 @@
+/* Header and Logo */
 .logo {
     width: 129px;
     height:36.65px;
@@ -69,3 +70,36 @@ a {
     color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
 }
+
+/* Sections */
+
+
+.theeasy {
+    text-align: center;
+    padding-top: 58px;
+    font-size: 60px;
+    line-height: 72px;
+    font-family: 'Poppins', sans-serif;
+    color: #190E2F;
+}
+
+.enviteis {
+    text-align: center;
+    padding-top: 31px;
+    font-size: 21px;
+    line-height: 22px;
+    color: #190E2F;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* section btn */
+.btnjoin {
+    width: 228px;
+    height: 56px;
+    border-radius: 4px;
+    background-color: #FF707A;
+    color: white;
+    border: none;
+    
+}
+.nocredit
