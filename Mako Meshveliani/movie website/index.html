@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+     <!--stylesheet-->
+     <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <!--title-->
+    <title>BENO.HD</title>
+
+    <!--fav icon-->
+    <link rel="shortcut icon" type="text/css" href="img/IMDb-icon.png"/>
+    <!--fonts-->
+    <link rel="stylesheet" href="fonts/poppins/Poppins-Black.ttf">
+    <!--font awesome-->
+    <link rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"/>
+
+    <!-- swipper css-->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+</head>
+<body>
+  <!--navigation-->
+  <nav class="navigation">
+    <!--menu button-->
+      <input type="checkbox" class="menu-btn" id="menu-btn"/>
+        <label for="menu-btn" class="menu-icon">
+          <span class="nav-icon"></span>
+          </label>
+          <!--menu-->
+              <ul class="menu">
+                  <li><a href="#">Home</a></li>
+                  <li> <a href="#">Genre</a> </li>
+                  <li> <a href="#">TV Shows</a></li>
+                  <li> <a href="#">Movies</a></li>
+                  <li> <a href="#">Contact</a></li>
+              </ul> 
+              
+              
+          
+      <!--logo-->
+<a href="index.html" class="logo"> MAIKITO <span>.HD</span></a>
+
+
+    <!--search box-->
+    
+        <form action="" class="search-box">
+     <!--search input-->
+        <input type="search" name="text" placeholder="Search Movie" class="search-input" required
+        class="search-input ">
+    <!--button-->
+    <button type="submit"><i class="fas fa search"></i></button>
+</form>
+</nav>
+      
+      <!--slider-->
+<section id="main-slider">
+  
+  
+  <div class="swiper myswiper">
+    <div class="swiper-wrapper">
+      </div>
+    </div>
+    <!--slide1-->
+    <div class="swiper-slide">
+      <div class="main-slider-box">
+        <!--overlay-->
+    <a href="#" class="main-slider-overlay">
+      <i class="fas fa-play">
+      </i>
+    </a>
+            <!--img-->
+            <div class="main-slider-img">
+               <img src="img/p-4.jpg" alt="insidious poster"></div>
+            </div>
+            </div>
+    
+           <!--img2-->
+           <div class="swiper-slide">
+            <div class="main-slider-box">
+          <!--overlay-->
+          <a href="#" class="main-slider-overlay">
+            <i class="fas fa-play">
+            </i>
+          </a>
+          
+<div class="main-slider-img">
+    <img src="img/p-5.jpg" alt="insidious poster"/></div>
+  </div>
+</div>
+ 
+       <!--img3 -->
+ <div class="swiper-slide">
+   <div class="main-slider-box">
+     <!--overlay-->
+     <a href="#" class="main-slider-overlay">
+       <i class="fas fa-play"></i>
+     </a>
+   
+     <!--img-->
+   <div class="main-slider-img">
+     <img src="img/p-6.jpg"
+     alt="insidious poster"/>
+ </div>
+ </div>
+ </div>
+ 
+ 
+
+  <!--img4-->
+    <div class="swiper-slide">
+      <div class="main-slider-box">
+        
+
+        <!--overlay-->
+      <a href="#" class="main-slider-overlay">
+        <i class="fas fa-play"></i>
+        </a>
+        <div class="main-slider-img">
+        <img src="img/post-1.jpg"
+        alt="insidious poster"/>
+        </div>
+      </div>
+    </div> 
+    
+
+     <!--img 5-->
+<div class="swiper-slide">
+  <div class="main-slider-box">
+    <!--overlay-->
+    <a href="#" class="main-slider-overlay">
+      <i class="fas fa-play"></i>
+      </a>
+          <!--img-->
+    <div class="main-slider-img">
+    <img src="img/post-12.jpg"
+    alt="insidious poster"/>
+   </div>
+   </div>
+   </div>
+   
+    </a>
+       </div>
+       <!--img 6 -->
+<div class="swiper-slide">
+  <div class="main-slider-box">
+    <!--overlay-->
+    <a href="#" class="main-slider-overlay">
+      <i class="fas fa-play"></i>
+      </a>
+      
+      <!--img-->
+      <div class="main-slider-img">
+    <img src="img/post-8.jpg"
+    alt="insidious poster">
+       </a>
+         </div>
+        </div></div>
+        
+      </section>
+         
+<!--navigation-->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+
+
+<script src="js/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+      delay: 5000,
+      disableOninteraction: false,
+    },
+
+    // navigation: {
+    //   nextE1: ".swiper-button-next",
+    //   prevE1: ".swiper-button-prev",
+    // },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
+  });
+</script>
+    
+      
+        
+</body>
+</html>
