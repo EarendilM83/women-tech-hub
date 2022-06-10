@@ -114,15 +114,18 @@ a {
   line-height: 14px;
   color: #524a63;
   padding-top: 12px;
+  padding-bottom: 36px;
   font-family: "Poppins", sans-serif;
 }
 
 /* Slider */
 
  .slider {
-   width: 900;
+   max-width: 900px;
+   margin: 0 auto;
    height: 500px;
    justify-content: center;
+   overflow: hidden;
  }
  .slides {
    display: flex;
@@ -144,8 +147,6 @@ a {
 /* manual navigation */
 
 .navigation-manual {
-position: absolute;
-width: 900px;
 margin-top: -40px;
 justify-content: center;
 display: flex;
