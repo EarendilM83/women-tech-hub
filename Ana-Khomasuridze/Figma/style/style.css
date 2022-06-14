@@ -385,3 +385,141 @@ margin-top: 150px;
   color: #000000;
   
 }
+
+
+/*Second Swiper*/
+
+.services{ 
+  margin-top: 100px;
+  
+}
+
+
+.services-txt h1{ 
+
+    color: #190e2f;
+    font-size: 36px;
+    font-family: popins-bold;
+    padding-bottom: 24px;
+    text-align: center;
+}
+.services .row{ 
+  display: flex !important;
+align-items: center !important;
+justify-content: center !important;
+
+}
+.services-txt p,h6{ 
+
+    text-align: center;
+    color: #190e2f;
+    font-family: popins-med;
+    display: block;
+
+}
+.services-card ul,li{
+  text-decoration: none; 
+  list-style: none;
+  
+}
+.card.services-card h3{ 
+
+    color: #f77881 !important;
+    font-size: 28px !important;
+    font-family: PoppinsBold !important;
+
+}
+.card.services-card li{ 
+  
+    margin-top: 20px;
+    font-family: popins-regular;
+    color: rgba(25, 14, 47, .8);
+}
+
+.btn-box {
+  border-radius: 4px;
+  background-color: #ff707a;
+  padding: 14px 27.6px 15px 26.4px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  color: #fff ;
+  font-size: 18px !important;
+  font-family: PoppinsSemibold;
+  margin-top: 26px !important;
+  margin-bottom: 12px !important;
+}
+
+.card.services-card{ 
+width: 414px !important;
+height: 340px !important;
+display: flex !important;
+align-items: center !important;
+justify-content: space-around !important;
+background-color: #FFFFFF !important;
+background-color: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 36px;
+    margin-bottom: 72px;
+    box-shadow: 0 4px 56px rgb(0 0 0 / 6%);
+    outline: none !important;
+    border: none !important;
+  cursor: pointer;
+  }
+  /* .card.services-card:hover{ 
+    width: 434px !important;
+height: 360px !important; 
+transition: 0.2s;
+  } */
+
+
+  footer{ 
+    background-color:  #474F5A !important;
+  }
+  .biemoji{ 
+    color: white !important;
+    background-color: white;
+  }
+
+  .emojis{ 
+    z-index: 9999;
+    color: #f9f9f9;
+  }
+
+  .footer-text{ 
+    flex-direction: column;
+    margin-top: 4px;
+  }
+  .footer-text p{ 
+   
+      margin-top: 16px;
+      color: rgba(219, 227, 230, 1);
+      font-family: popins-regular;
+      font-size: 12px !important;
+  
+  }
+  .footer-social {
+    padding-top: 5px;
+}
+.footer-social span {
+  padding-right: 10px;
+}
+.footer-list {
+  margin-left: -40px;
+}
+
+.footer-title h6 {
+  color: #dbe3e6;
+  font-size: 14px !important;
+  font-family: popins-bold;
+  font-weight: 600;
+}
+
+.footer-list {
+  margin-left: -40px;
+}
+
+.footer-list ul li {
+  margin-top: 8px;
+}
