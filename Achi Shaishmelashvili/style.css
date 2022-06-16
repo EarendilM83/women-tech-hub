@@ -210,4 +210,39 @@ section h5 {
   color: #433A4A;
   opacity: 0.8;
   padding-top: 24px;
+  padding-bottom: 57px;
+}
+
+/* shadowboxes */
+
+.box {
+  display: flex;
+  justify-content: center;
+  /* justify-content: space-around; */
+}
+.box .shadow {
+  width: 320px;
+  height: 140px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  margin-right: 32px;
+  display: flex;
+  justify-content: space-around;
+  color: #433A4A
+  ;
+}
+
+.box .box1 {
+  box-shadow: inset 0 6px 0 0 #FF707A, 0px 4px 40px -2px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+}
+.box .box2 {
+  box-shadow: inset 0 6px 0 0 #F5B118, 0px 4px 40px -2px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+}
+.box .box3 {
+  box-shadow: inset 0 6px 0 0 #00AEDC, 0px 4px 40px -2px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
 }
