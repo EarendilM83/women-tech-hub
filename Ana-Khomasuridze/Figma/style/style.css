@@ -475,6 +475,7 @@ transition: 0.2s;
 
 
   footer{ 
+    /* height: 80vh; */
     background-color:  #474F5A !important;
   }
   .biemoji{ 
@@ -487,39 +488,113 @@ transition: 0.2s;
     color: #f9f9f9;
   }
 
+  .footer-social span { 
+    color: white;
+
+  padding: 7px 10px;
+    font-size: 16px;
+    border-radius: 50%;
+     border: 1px solid white;
+
+    justify-content: space-between; 
+    margin-left: 10px;
+
+    
+  }
+  .footer-social{ 
+    margin-top: 50px !important;
+  }
+  
+
   .footer-text{ 
     flex-direction: column;
     margin-top: 4px;
   }
-  .footer-text p{ 
+  .footer-description p{  
    
       margin-top: 16px;
-      color: rgba(219, 227, 230, 1);
-      font-family: popins-regular;
+      color: #DBE3E6;
+      font-family: PoppinsMedium;
       font-size: 12px !important;
   
   }
-  .footer-social {
+  .footer-text li{ 
+
+      color: #DBE3E6;
+      font-family: PoppinsRegular;
+      font-size: 12px !important;
+
+  
+  }
+  footer .CopyrightText{ 
+    color: #DBE3E6;
+    font-family: PoppinsRegular;
+    font-size: 12px !important;
+
+
+  }
+
+  .devider{ 
+       display: flex ;
+    align-items: center;
+    justify-content: center;
+  }
+  .solid{ 
+    border-top: 2px solid #bbb;
+    width: 50rem; 
+ 
+  }
+
+  /* .footer-social {
     padding-top: 5px;
 }
 .footer-social span {
   padding-right: 10px;
-}
+}*/
 .footer-list {
-  margin-left: -40px;
-}
+  text-align: start;
+margin-left: -30px;
+color: white;
+line-height: 2; 
+}   
+
 
 .footer-title h6 {
-  color: #dbe3e6;
+  color: #DBE3E6;
   font-size: 14px !important;
-  font-family: popins-bold;
-  font-weight: 600;
-}
+  font-family: PoppinsBold;
 
-.footer-list {
+  text-align: start;
+} 
+
+/* .footer-list {
   margin-left: -40px;
 }
 
 .footer-list ul li {
   margin-top: 8px;
+} */
+/* 
+footer .container{
+
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px; 
+    column-gap: 10px;
+    row-gap: 15px;
 }
+   */
+
+   footer .eachbox{ 
+    
+    row-gap: 10px !important;
+   margin-top: 60px;
+  margin-bottom: 40px;
+  width: 230px;
+  height: 300px;
+  box-sizing: border-box;
+column-gap: 20px !important;
+   }
+
+   .eachbox3{ 
+    width:170px !important ;
+   }
