@@ -230,8 +230,9 @@ section h5 {
   margin-right: 32px;
   display: flex;
   justify-content: space-around;
-  color: #433A4A
-  ;
+  color: #433A4A;
+  font-weight: 700;
+  opacity: 0.8;
 }
 
 .box .box1 {
