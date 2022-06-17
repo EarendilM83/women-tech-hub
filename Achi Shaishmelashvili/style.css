@@ -203,7 +203,7 @@ section h4 {
   padding-top: 46px;
   color: #190E2F;
 }
-section h5 {
+section .smalltitle{
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   line-height: 34px;
@@ -250,6 +250,7 @@ section h5 {
  .thirdbtn {
   justify-content: center;
   padding-top: 40px;
+  padding-bottom: 36px;
  }
 
 .thirdbtn1 {
@@ -267,4 +268,37 @@ section h5 {
 
 .iconsec {
   background-color: #F9F9F9;
+}
+.iconinfo{
+  padding-top: 57px;
+  display: flex;
+}
+.calendarinfo, .personalinfo, .videoinfo {
+  width: 353px; 
+  height: 336px;
+}
+
+.iconinfo h5 {
+  font-family: "Poppins", sans-serif;
+  color: #190E2F;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  opacity: 0.8;
+  padding-top: 12px;
+  padding-bottom: 24px;
+}
+.iconinfo h6 {
+  font-family: "Poppins", sans-serif;
+  color: #190e2f;
+  opacity: 0.8;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  padding-bottom: 12px;
+}
+.iconinfo .iconbtn {
+  border: none;
+  color: #00AEDC;
+  background: none;
 }
