@@ -273,7 +273,7 @@ section .smalltitle{
   padding-top: 57px;
   display: flex;
 }
-.calendarinfo, .personalinfo, .videoinfo {
+.calendarinfo, .personalinfo, .videoinfo, .clientinfo, .paymentinfo, .widgetinfo, .adviceinfo, .compaignsinfo, .groupsinfo{
   width: 353px; 
   height: 336px;
 }
