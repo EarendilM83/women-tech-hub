@@ -296,6 +296,7 @@ section .smalltitle{
   line-height: 26px;
   font-weight: 400;
   padding-bottom: 12px;
+  text-align: start;
 }
 .iconinfo .iconbtn {
   border: none;
@@ -324,6 +325,7 @@ section .smalltitle{
   line-height: 26px;
   font-weight: 400;
   padding-bottom: 12px;
+  text-align: start;
 }
 .midimagebtn {
   font-family: "Poppins", sans-serif;
@@ -349,4 +351,66 @@ section .smalltitle{
   line-height: 54px;
   padding-top: 46px;
   color: #190E2F;
+  padding-bottom: 40px;
+}
+.circleimageinfo h5 p{
+  font-family: "Poppins", sans-serif;
+  line-height: 34px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+  padding-bottom: 24px;
+}
+.circleimageinfo h5 p::first-letter{
+  color: #00AEDC;
+}
+
+/* second slider */
+
+.secondslides h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  padding-top: 63px;
+  color: #190E2F;
+}
+
+
+/* last section */
+
+.lastsection h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  padding-top: 105px;
+  color: #190E2F;
+}
+.lastsection h5, h6 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 34px;
+  color: #190E2F;
+  font-weight: 400;
+}
+.lastsection h5 {
+  font-weight: 600;
+  padding-top: 24px;
+}
+
+.lastsection .lastshadowbox h5 {
+  font-family: "Poppins", sans-serif;
+  color: #F77881;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+}
+.lastsection .lastshadowbox {
+  justify-content: center;
+  width: 419px;
+  height: 340px;
+  font-family: "Poppins", sans-serif;
+  opacity: 0.8;
 }
