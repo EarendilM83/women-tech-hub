@@ -379,9 +379,10 @@ section .smalltitle{
 .secondslider1 {
   width: 357px;
   height: 306px;
-  background: #ffffff;
+  background-color: #ffffff;
   box-shadow: 0px 4px 40px -2px rgba(0, 0, 0, 0.08);
   border-radius: 12px;
+  
 }
 .secondslider1 p {
   font-family: "Poppins", sans-serif;
@@ -401,7 +402,7 @@ section .smalltitle{
   line-height: 24px;
   font-size: 16px;
   color: rgba(25, 14, 47, 0.8);
-  text-align: center;
+  padding-left: 84px;
   padding-top: 16.54px;
 }
 .secondslider1 h6 {
@@ -415,6 +416,13 @@ section .smalltitle{
 }
 .secondslider1 img {
   padding-top: 20px;
+}
+.secondslider1 .imgslider {
+  display: flex;
+  padding-left: 24px;
+}
+.secondslides {
+  display: flex;
 }
 
 
