@@ -26,8 +26,13 @@
     <!-- header -->
     <header>
         <a href="#" class="logo"> <img src="img/logo.png" alt="Envite Logo" /></a>
+
         <nav>
-            <ul class="navbar">
+
+            <div class="menu-btn">
+                <div class="menu-btn__lines"></div>
+            </div>
+            <ul class="menu-items">
                 <li class="drop">
                     <a href="#" class="menu-hover">FEATURES<i class="fa fa-angle-down"></i
             ></a>
@@ -87,13 +92,25 @@
                     <a href="#" class="menu-hover">FAQs</a>
                 </li>
             </ul>
+
         </nav>
         <div class="nav-btn">
             <a href="#" class="white-btn">LOG IN</a>
 
             <a href="#" class="pink-btn">GET STARTED</a>
         </div>
+
     </header>
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        const menuItems = document.querySelector(".menu-items");
+
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("open");
+            menuItems.classList.toggle("open");
+        });
+    </script>
 
     <section class="heading-wrapper-section">
         <h1 class="section-title">The easiest way to monetize<br> your skills</h1>
@@ -407,6 +424,7 @@
                 <hr class="join"> </div>
         </div>
     </section>
+
     <section class="fifth-section">
         <div class="fifth-sectino-div">
             <div class="list-div">

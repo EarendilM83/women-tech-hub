@@ -44,7 +44,7 @@ header {
     top: 15px;
 }
 
-.navbar {
+.menu-items {
     display: flex;
 }
 
@@ -52,14 +52,14 @@ header {
     padding: 3px 20px 0px;
 }
 
-.navbar a {
+.menu-items a {
     font-family: "Poppins";
     font-weight: 700;
     color: rgba(47, 38, 67, 1);
     opacity: 0.8;
 }
 
-.navbar i:hover {
+.menu-items i:hover {
     transform: rotate(180deg);
 }
 
@@ -127,6 +127,59 @@ ul .dropdown-content:hover {
 .drop:hover>.dropdown-content {
     opacity: 1;
     visibility: visible;
+}
+
+
+/* nav menu btn */
+
+.menu-btn {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-btn__lines,
+.menu-btn__lines::before,
+.menu-btn__lines::after {
+    width: 1.5rem;
+    height: 0.1rem;
+    background-color: rgba(106, 110, 117, 1);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__lines::before,
+.menu-btn__lines::after {
+    content: "";
+    position: absolute;
+}
+
+.menu-btn__lines::before {
+    transform: translateY(-0.5rem);
+}
+
+.menu-btn__lines::after {
+    transform: translateY(0.5rem);
+}
+
+
+/* burger menu animation */
+
+.menu-btn.open .menu-btn__lines {
+    transform: translateX(2rem);
+    background-color: transparent;
+}
+
+.menu-btn.open .menu-btn__lines::before {
+    transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+}
+
+.menu-btn.open .menu-btn__lines::after {
+    transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
 }
 
 
@@ -755,7 +808,7 @@ footer {
     margin-top: 5px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
     body,
     html {
         width: 100%;
@@ -775,9 +828,6 @@ footer {
         text-align: center;
         font-size: 36px;
         width: 300px;
-    }
-    .menu-hover {
-        display: none;
     }
     .nav-btn {
         display: none;
@@ -806,10 +856,16 @@ footer {
         line-height: 120%;
         width: 281px;
     }
+    .circle {
+        display: none;
+    }
+    .circle3 {
+        display: none;
+    }
     .dots {
-        position: absolute;
-        align-items: center;
-        transform: translate(140px, -30px);
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
     }
     .span2 {
         font-weight: 600;
@@ -846,9 +902,10 @@ footer {
         display: block;
     }
     .fourth-section-div img {
-        width: 303px;
-        height: 194px;
-        margin-left: 34px;
+        /* width: 303px;
+        height: 194px; */
+        margin-left: 0px;
+        max-width: 100%;
     }
     .article-title {
         font-size: 24px;
@@ -857,7 +914,7 @@ footer {
     .article {
         font-size: 16px;
         /* text-align: center; */
-        width: 327px;
+        /* width: 327px; */
         margin-left: -20px;
     }
     .joinnow {
@@ -907,8 +964,6 @@ footer {
     .Trustedby {
         font-weight: 700;
         font-size: 24px;
-        width: 262px;
-        margin-left: 56px;
     }
     footer {
         height: 957px;
@@ -965,5 +1020,50 @@ footer {
     }
     .logo img {
         left: 10px;
+    }
+    .menu-btn {
+        display: flex;
+    }
+    .menu-items {
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        transform: translateX(100vw);
+        background-color: #f9f9f9;
+        transition: transform 0.3s ease-in-out;
+    }
+    .menu-items.open {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 1200px) {
+    body,
+    html {
+        width: 100%;
+        /* height: 100%; */
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .section2 {
+        width: 100%;
+    }
+    .navbar a {
+        font-size: 16px;
+        width: 100%;
+        padding: 10px;
+    }
+    .nav-btn a {
+        padding: 10px 10px;
+        font-weight: 700;
+    }
+    .logo img {
+        left: 20px;
     }
 }
