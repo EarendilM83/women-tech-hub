@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="slider.css"></link>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -25,8 +26,13 @@
     <!-- header -->
     <header>
         <a href="#" class="logo"> <img src="img/logo.png" alt="Envite Logo" /></a>
+
         <nav>
-            <ul class="navbar">
+
+            <div class="menu-btn">
+                <div class="menu-btn__lines"></div>
+            </div>
+            <ul class="menu-items">
                 <li class="drop">
                     <a href="#" class="menu-hover">FEATURES<i class="fa fa-angle-down"></i
             ></a>
@@ -86,13 +92,25 @@
                     <a href="#" class="menu-hover">FAQs</a>
                 </li>
             </ul>
+
         </nav>
         <div class="nav-btn">
             <a href="#" class="white-btn">LOG IN</a>
 
             <a href="#" class="pink-btn">GET STARTED</a>
         </div>
+
     </header>
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        const menuItems = document.querySelector(".menu-items");
+
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("open");
+            menuItems.classList.toggle("open");
+        });
+    </script>
 
     <section class="heading-wrapper-section">
         <h1 class="section-title">The easiest way to monetize<br> your skills</h1>
@@ -199,6 +217,7 @@
             </h2>
 
             <div class="wrapper">
+
                 <div>
                     <span><svg
                 width="64"
@@ -388,7 +407,9 @@
 
             </div>
         </div>
+        </div>
     </section>
+
     <section class="fourth-section">
         <div class="fourth-section-div">
             <img src="./img/image1.png">
@@ -403,10 +424,12 @@
                 <hr class="join"> </div>
         </div>
     </section>
+
     <section class="fifth-section">
         <div class="fifth-sectino-div">
             <div class="list-div">
                 <h3 class="h3-li">Benefits of Envite</h3>
+                <img src="./img/envitep.jpg" class="enviteimg">
                 <ul>
                     <li class="flex"><i class="fa fa-chevron-right"></i>
                         <a class="li-div-a">
@@ -431,6 +454,7 @@
                     </li>
                 </ul>
             </div>
+
             <span class="circle"></span>
             <img src="./img/5.png" class="borderimage">
             <img src="./img/3.png" class="borderimage4">
@@ -447,8 +471,10 @@
 
 
         </div>
-        <h2 class="Trustedby">Trusted by hundreds of individuals<br> across the globe</h2>
     </section>
+
+    <h2 class="Trustedby">Trusted by hundreds of individuals<br> across the globe</h2>
+
     <section class="slider">
         <div class="main-carousel">
             <div class="cell">
@@ -645,7 +671,7 @@
                     <li class="line-li">
                         <a href="#" class="line-a"> Campaigns </a>
                     </li>
-                    <li>
+                    <li class="line-li">
                         <a href="#" class="line-a"> groups </a>
                     </li>
                 </ul>
