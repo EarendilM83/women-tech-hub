@@ -376,15 +376,15 @@ section .smalltitle{
   padding-top: 63px;
   color: #190E2F;
 }
-.secondslider1 {
+.carousel{
   width: 357px;
   height: 306px;
   background-color: #ffffff;
   box-shadow: 0px 4px 40px -2px rgba(0, 0, 0, 0.08);
   border-radius: 12px;
-  
+  margin-left: 24px;
 }
-.secondslider1 p {
+.carousel p {
   font-family: "Poppins", sans-serif;
   font: 400;
   font-style: italic;
@@ -393,10 +393,10 @@ section .smalltitle{
   color: rgba(25, 14, 47, 0.8);
   padding-top: 20px;
 }
-.secondslider1 p span {
+.carousel p span {
   color: #F77881;
 }
-.secondslider1 h5 {
+.carousel h5 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   line-height: 24px;
@@ -405,7 +405,7 @@ section .smalltitle{
   padding-left: 84px;
   padding-top: 16.54px;
 }
-.secondslider1 h6 {
+.carousel h6 {
   font-family: "Poppins", sans-serif;
   opacity: 0.8;
   font-weight: 400;
@@ -414,10 +414,10 @@ section .smalltitle{
   color: rgba(25, 14, 47, 0.8);
   text-align: center;
 }
-.secondslider1 img {
+.carousel img {
   padding-top: 20px;
 }
-.secondslider1 .imgslider {
+.carousel .imgslider {
   display: flex;
   padding-left: 24px;
 }
@@ -426,10 +426,12 @@ section .smalltitle{
 }
 
 
+
 /* last section */
 
 .lastsection h4 {
   font-family: "Poppins", sans-serif;
+  font-weight: 700;
   font-size: 36px;
   line-height: 54px;
   text-align: center;
@@ -551,4 +553,78 @@ footer {
   opacity: 0.25;
   border: 1px solid #DBE3E6;
   margin-top: 40px;
+}
+
+/* manual navigation */
+
+/* .navigation-manual1 {
+  margin-top: -40px;
+  justify-content: center;
+  display: flex;
+  }
+  .manual-btn1 {
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    background-color: rgba(218, 219, 221, 1);
+    width: 6px;
+    height: 6px;
+  }
+  
+  .manual-btn1:not(:last-child) {
+    margin-right: 8px;
+  }
+  
+  .manual-btn1:hover {
+    background-color: #B9D7E0;
+    width: 8px;
+    height: 8px;
+  }
+  
+  #radio11:checked ~ .secondslider1 {
+    margin-left: -20%;
+  }
+  #radio22:checked ~ .secondslider1 {
+    margin-left: -40%;
+  }
+  #radio33:checked ~ .secondslider1 {
+    margin-left: -60%;
+  }
+  
+  /* auto navigation */
+  
+  /* #radio11:checked ~ .navigation-auto1 .auto-btn11 {
+    background: #B9D7E0;
+  }
+  #radio22:checked ~ .navigation-auto1 .auto-btn22 {
+    background: #B9D7E0;
+  }
+  #radio33:checked ~ .navigation-auto1 .auto-btn33 {
+    background: #B9D7E0;
+  } */ 
+ 
+
+
+/* second slider btn */
+
+.carousel-slide {
+  display: flex;
+}
+
+#prevBtn {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #B9D7E0;
+  border: none;
+  opacity: 0.8;
+}
+#nextBtn {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #B9D7E0;
+  border: none;
+  opacity: 0.8;
 }
