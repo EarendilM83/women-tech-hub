@@ -330,15 +330,12 @@ height: 100%;
   color:#433A4A;
   line-height: 34.12px;
 }
-/*
-big section ...............
+/*........card Features section...........big section ...............*/
 
-*/
+
 
 
 .cards {
- 
-
   display: grid;
   align-items: center;
   justify-content: center;
@@ -346,14 +343,15 @@ big section ...............
 }
 
 /* Screen larger than 600px? 2 column */
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   .cards { grid-template-columns: repeat(2, 1fr); }
-}
+} */
 
 /* Screen larger than 900px? 3 columns */
-@media (min-width: 900px) {
+
+/* @media (min-width: 900px) {
   .cards { grid-template-columns: repeat(3, 1fr); }
-}
+} */
 
 .Features {
   background-color: #f9f9f9;
@@ -383,22 +381,18 @@ width: 100%;
   height: 330px;
 width: 323px;
   padding: 20px 20px;
-  grid-template-columns: 100px 50px 100px;
   grid-template-rows: 80px auto 80px; 
   column-gap: 10px;
   row-gap: 15px;
   border: none;
   background-color: transparent;
+  box-shadow: none;
 } 
 
  .Features .grid-container  { 
-
-
     display: grid;
     column-gap: 50px;
     row-gap: 20px;
-  
-  
 } 
 .feature-box-title{ 
   color: #190E2F;
@@ -410,10 +404,11 @@ width: 323px;
   font-family: PoppinsRegular;
   font-size: 16px;
 }
-.feature-box-more{ 
+.feature-box-more a{ 
   color: #00AEDC;
   font-family:PoppinsSemiBold;
   font-size: 16px;
+  text-decoration: none !important;
 }
 
 /*.........who is it for...............*/
@@ -458,26 +453,22 @@ margin-top: 150px;
 }
 
 /* Screen larger than 900px? 3 columns */
-@media (min-width: 900px) {
+/* @media (min-width: 900px) {
   .WhoIsItFor .WhoisitForText{ 
     grid-template-columns: repeat(3, 1fr); 
   }
-}
+} */
 
-/*.......benefits..........*/
+/*...........................benefits.......................*/
 
-@media (min-width: 600px) {
-  .WhoIsItFor .photoSec{ 
-    grid-template-columns: repeat(2, 1fr);
-   }
-}
+
 
 /* Screen larger than 900px? 3 columns */
-@media (min-width: 900px) {
+/* @media (min-width: 900px) {
   .WhoIsItFor .col-lg-6{ 
     grid-template-columns: repeat(3, 1fr); 
-  }
-}
+  }} */
+
 .Benefits{ 
   margin-top: 100px;
 }
@@ -731,6 +722,7 @@ background-color: #FFFFFF !important;
 
   footer{ 
     /* height: 80vh; */
+
     background-color:  #474F5A !important;
   }
   .biemoji{ 
@@ -817,18 +809,18 @@ line-height: 2;
   text-align: start;
 } 
 footer .wrapper{ 
-  display: block;
+display: flex;
+align-items: center;
+justify-content: space-around !important;
   width: 100%;
 }
    footer .eachbox{ 
-    
-    row-gap: 10px !important;
    margin-top: 60px;
   margin-bottom: 40px;
+margin: 40px 25px;
   width: 230px;
   height: 300px;
-  box-sizing: border-box;
-column-gap: 20px !important;
+
    }
 
    .eachbox3{ 
@@ -846,158 +838,32 @@ column-gap: 20px !important;
     font-weight: bold;
     color: white;
    }
-
+.footer-social span{  
+    cursor: pointer;
+  }
    /*..........*/
-
+   /* .smallboxes .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  
+   */
+  .Features-slider{ 
+    display: none;
+  }
+  
+  
 
 .mobile-version{
   display:none ;
 }
-/*.................................responisve....................................*/
 
-   @media (max-width: 800px) {
-    nav .form .navbar-brand,.btn{ 
-      display: none;
-     }
-     .nav-item .nav-link{ 
-      align-items: flex-end;
-      justify-content: end;
-     }
-     .swiper{ 
-      width: 60%;
-      height: 30%; 
-
-     }
-     .swiper-slide img {
-      display: block;
-      width: 550px;
-      height: 250px;
-      object-fit: cover !important; 
-      background-size: contain !important;
-    }
-
-    .swiper {
-      width: 60%;
-      height: 30%;
-  }
-  }
-
-@media (max-width: 768px){ 
-  .header-text p {
-    margin-top: 15px;
-    margin-bottom: 24px;
-    font-size: 14px;
-}
-.joinbtn {
-    margin-top: 0px !important;
-    margin-bottom: 8px !important;
-}
-}
-
-
-
-@media only screen and (max-width: 991px){ 
-.box-gap {
-    margin-bottom: 15px;
-}
-}
-
-@media (max-width: 780px){ 
-.span-3-of-3, .span-2-of-3, .span-1-of-3 {
-    width: 100%;
-}
-.col {
-    margin: 1% 0 1% 0%;
-} 
-}
-
-
-@media (max-width: 992px){
-  .header-text h1 {
-    font-size: 36px !important;
-}
-  .navbar-brand {
-    margin-left: 15px;
-} 
-.photoSec {
-    margin-top: 40px;
-}
-  .photoSec img {
-    width: 100%;
-}
-.WhoisitForText {
-    margin-top: 0;
-}
-
-.services-txt h1{
-    font-size: 26px;
-} 
-
-.footer-text {
-    margin-top: 20px;
-    margin-bottom: 10px;
-} 
-.TiTle{
-  font-size: 24px;
-  text-align: center;
-  padding-top: 32px;
-}
-.cards.Features{
-  display: block;
-}
-}
-
-
-
-@media only screen and (max-width: 575px){  
-.joinnowbtn {
-    margin: 0 auto;
-    width: auto;
-}
-
-
-
- }
- 
- @media (max-width: 576px){  
- .services .container{
-    max-width: 540px;
-}
-footer .container {
-    max-width: 540px;
-}
-
-.slider{ 
-  display: none !important;
-}
-.carousel.slide{
-  display: inline !important;
-  height: 200px !important;
-  width: 300px !important;
-  padding: 0 auto;
-  
-}
-
-
-.mobile-version{
-  display: block !important;
-  margin-top: 50px;
-  background-color: rgba(230, 229, 229, 0.671);
-  padding: 20px;
-}
-.mobile-version .feature-box-img img{
-  width: 20%;
-  align-items: center !important;
-}
-.cards.Features{
-  display: none;
-}
-}
-
-
-
-
-
+.mobileShow {display: none;}
 .navbar-toggler { 
   align-items: flex-end !important;
   justify-content: end !important;
@@ -1034,8 +900,12 @@ footer .container {
   min-height: 100%;
   position: relative;
 }
+/*.................................responisve....................................*/
 
-@media (max-width: 992px){
+
+
+
+/* @media (max-width: 992px){
 .cls_inner {
     position: absolute;
     right: 2%;
@@ -1047,33 +917,9 @@ svg {
   overflow: hidden;
   vertical-align: middle;
 }
+ */
 
-@media (max-width: 768px){  
-.WhoIsItFor .container {
-    max-width: 400px;
-} }
-
-@media (max-width: 992px){   
-.BenefitsText h1 {
-    display: block;
-    margin-top: 40px;
-    font-size: 26px;
-    display: flex;
-    justify-content: start;
-} 
-.benefitsImg {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: start;
-}
-.benefitsImg  img {
-  width: 340px;
-
-}
-
-
-}
-@media (max-width: 1130px) {
+/* @media (max-width: 1130px) {
   .cards.Features .card { 
     align-items: center !important;
     justify-content: center !important;
@@ -1093,14 +939,11 @@ svg {
   width: 500px;
 }
 
-}
+} */
 
-
-
-.mobileShow {display: none;}
 
 /* Smartphone Portrait and Landscape */
-@media only screen
+/* @media only screen
   and (min-device-width : 310px)
   and (max-device-width : 780px){ 
     .mobileShow {
@@ -1110,91 +953,33 @@ svg {
       border: 1px solid red;
       padding: 20px ;
     }
-}
-
-@media screen and (max-width: 775px) {
-
-.solid{ 
-  width: 15rem;
-}
-footer .row{ 
-
-    display: grid;
-    grid-template-columns: 1fr ;
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
-    grid-template-rows: auto !important;
-    margin-right: 150px !important;
-
-}
-footer .eachbox{
-  border: 1px solid red;
-
-}
-footer .eachbox3{
-  height: 100px;
-}
-.swiper-slide img{
-  width: 90%;
-  height: 100%;
-}
-
-.smallboxes .Box { 
-  align-items: center;
-  justify-content: center;
-  width: 200px;
- 
-
-}
-.WhoIsItFor .container {
-  width: 300px;
+} */
 
 
-} 
-.Benefits .container{ 
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-width: 300px;
-}
+/*...responsive below 1000/.......*/
 
-.services .container{ 
-  width: 80%;
-  height: 50%;
-  align-items: flex-start;
-  justify-content: flex-start;
-  display: flexbox;
-}
-.smallboxes{ 
-  margin-top: 60px;
-}
-.smallboxes .TiTle{
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
-}
-
-
-}
-
-.smallboxes .row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-
-.footer-social span{  
-  cursor: pointer;
-}
-.Features-slider{ 
-  display: none;
-}
 
 @media (max-width: 1000px) {
+  .BenefitsText h1 {
+    display: block;
+    margin-top: 40px;
+    font-size: 26px;
+    display: flex;
+    justify-content: start;
+} 
+.benefitsImg {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: start;
+}
+.benefitsImg  img {
+  width: 340px;
+
+}
+
+  .box-gap {
+    margin-bottom: 15px;
+}
  .Features{ 
   display: none;
 }
@@ -1232,94 +1017,323 @@ line-height: 39.6px;
  font-size: 14px;
 
 }
-}   
-@media (max-width: 400px) {
-.Benefits .container{ 
-  width: fit-content;
+
+.header-text h1 {
+  font-size: 36px !important;
 }
-  .smallboxes{ 
-    margin-top: 150px;
-  }
-.swiper-slide img{
+.navbar-brand {
+  margin-left: 15px;
+} 
+.photoSec {
+  margin-top: 40px;
+}
+.photoSec img {
+  width: 100%;
+}
+.WhoisitForText {
+  margin-top: 0;
+}
+
+.services-txt h1{
+  font-size: 26px;
+} 
+
+
+.TiTle{
+font-size: 24px;
+text-align: center;
+padding-top: 32px;
+}
+.cards.Features{
+display: block;
+}
+ .swiper{ 
+  width: 100%;
+  height: 10%; 
+
+ }
+}   
+
+
+
+
+/*....responsive below 760.....*/
+
+@media (max-width: 760px){ 
+  nav .form .navbar-brand,.btn{ 
+     display: none;
+    }
+    .nav-item .nav-link{ 
+     align-items: flex-end;
+     justify-content: end;
+    }
+    .swiper{ 
+     width: 60%;
+     height: 30%; 
+
+    }
+    .swiper-slide img {
+     display: block;
+     width: 550px;
+     height: 250px;
+     object-fit: cover !important; 
+     background-size: contain !important;
+   }
+
+ .header-text p {
+   margin-top: 15px;
+   margin-bottom: 24px;
+   font-size: 14px;
+}
+.joinbtn {
+   margin-top: 0px !important;
+   margin-bottom: 8px !important;
+}
+
+
+.services .container{ 
+  width: 90%;
+  height: 50%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flexbox;
+}
+
+ .swiper-slide img{
   width: 100%;
   height: 10%;
 }
-.TiTle{
-  font-weight: 800;
-  font-size: 25px !important;
-  line-height: 39.6px;
-  
-  }
-  .smallboxes .Box{
-    width: 350px !important;
-  }
 
-  .services-card .card-body{
-    width: 300px;
+.smallboxes{
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
+.smallboxes .Box { 
+  width: 500px;
+
+}
+.smallboxes{ 
+  margin-top: 60px;
+}
+.smallboxes .TiTle{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.cards.Features{
+  display: none;
+}
+
+.mobile-version{
+  display: block !important;
+  margin-top: 100px;
+  background-color: #F0F0F0;;
+  padding: 50px;
+ width: 100%;
+ margin-bottom: 50px;
+}
+.mobile-version .feature-box-img img{
+  width:50px;
+  height: 50px;
+
+}
+
+.mobile-version .swiper-wrapper .swiper-slide{ 
+  align-items: flex-start;
+  text-align:start !important;
+  box-shadow: none;
+}
+.span-3-of-3, .span-2-of-3, .span-1-of-3 {
+  width: 100%;
+}
+.col {
+  margin: 1% 0 1% 0%;
+} 
+
+.WhoIsItFor .container {
+  width: 450px !important;
+}
+.Benefits .container{ 
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 450px !important;
+}
+
+footer .row{ 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  
+  gap: 10px 2em;
+  padding: 0px 50px;
+
+}
+.solid{ 
+  width: 25rem !important;
+}
+.footer-last{
+  display: inline;
+}
+
+}
+
+
+/*...responsive below 500*/
+
+   
+   @media (max-width: 500px){  
+  .joinnowbtn {
+      margin: 0 auto;
+      width: auto;
+  }
+   .services .container{
+      max-width: 540px;
+  }
+  footer .container {
+      max-width: 540px;
+  }
+  
+  .slider{ 
+    display: none !important;
+  }
+  .carousel.slide{
+    display: inline !important;
+    height: 200px !important;
+    width: 300px !important;
+    padding: 0 auto;
     
   }
-  .services-card .card-body h3{ 
-    font-size: 16px !important;
-    font-weight: 600;
-  }
-  .services-txt p{ 
-    font-weight: 400;
-font-size: 12px;
-line-height: 170%;
-  }
-  .services-txt h6{
-    font-weight: 600;
-font-size: 12px;
-Line-height: 20.4px;
-
-
-}
-.services-txt h1{ 
-  font-weight: 700;
-font-size: 24px;
-line-height: 28.8px;
-}
-.services {
-  margin-top: 100px !important;
-}
-
-.slider-title{ 
-  font-weight: 700;
-font-size: 24px;
-line-height: 28.8px;
-}
-.BenefitsText h1{ 
-  font-weight: 700;
-font-size: 24px;
-line-height: 120%;
-}
-.BenefitsText p{
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 27.3px;
   
-}
-.BenefitsText{ 
- padding: 5px ;
-}
-.WhoIsItFor .photoSec img{
-  width: 300px;
-  height: 190px;
+  
+  .mobile-version{
+    display: block !important;
+    margin-top: 100px;
+    background-color: #F0F0F0;;
+    padding: 50px;
+   width: 100%;
+   margin-bottom: 50px;
+  }
+  .mobile-version .swiper-pagination{ 
+    margin-top: 300px !important;
+  }
+  .mobile-version .feature-box-more{
+    text-decoration: none !important;
+    
+  }
+  .mobile-version .swiper-wrapper .swiper-slide{
+    box-shadow: none !important;
+  }
+  .mobile-version .features-title{
+  height: 200px;
+  }
+  .mobile-version .mySwiper{
+    width: 100% !important;
+  }
+  .mobile-version .feature-box-img img{
+    width: 100%;
+    align-items: center !important;
+  }
 
-}
-.WhoisitForText h1{
-  font-weight: 700 !important;
+
+  .mobile-version .col-12 h3{
+    font-weight: 700 !important;
 font-size: 24px !important;
 line-height: 28.8px !important;
-}
-.WhoisitForText p{
-  font-weight: 400 !important;
-font-size: 16px !important;
-line-height: 25.81px !important;
-}
+  }
+  .smallboxes .Box{
+      width: 350px !important;
+    }
+  }
+  
 
-}
+/*....responsive below 350.....*/
+@media (max-width: 350px) {
 
-
-
-/*.....mobile slider.....*/
+  .mobile-version .col-12 h3{
+    font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+  }
+  .Benefits .container{ 
+    width: fit-content;
+  }
+    .smallboxes{ 
+      margin-top: 150px;
+    }
+  .swiper-slide img{
+    width: 100%;
+    height: 10%;
+  }
+  .TiTle{
+    font-weight: 800;
+    font-size: 25px !important;
+    line-height: 39.6px;
+    
+    }
+    
+  
+    .services-card .card-body{
+      width: 300px;
+      
+    }
+    .services-card .card-body h3{ 
+      font-size: 16px !important;
+      font-weight: 600;
+    }
+    .services-txt p{ 
+      font-weight: 400;
+  font-size: 12px;
+  line-height: 170%;
+    }
+    .services-txt h6{
+      font-weight: 600;
+  font-size: 12px;
+  Line-height: 20.4px;
+  
+  
+  }
+  .services-txt h1{ 
+    font-weight: 700;
+  font-size: 24px;
+  line-height: 28.8px;
+  }
+  .services {
+    margin-top: 100px !important;
+  }
+  
+  .slider-title{ 
+    font-weight: 700;
+  font-size: 24px;
+  line-height: 28.8px;
+  }
+  .BenefitsText h1{ 
+    font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  }
+  .BenefitsText p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27.3px;
+    
+  }
+  .BenefitsText{ 
+   padding: 5px ;
+  }
+  .WhoIsItFor .photoSec img{
+    width: 300px;
+    height: 190px;
+  
+  }
+  .WhoisitForText h1{
+    font-weight: 700 !important;
+  font-size: 24px !important;
+  line-height: 28.8px !important;
+  }
+  .WhoisitForText p{
+    font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 25.81px !important;
+  }
+  
+  }
