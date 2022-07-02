@@ -63,6 +63,12 @@ nav .navbar-nav{
   color: #2F2643;
 }
 
+.navbar-toggler:active .navbar-nav{
+  background-color: red;
+}
+.navbar-light .navbar-toggler-icon {
+  background-color: #00aedc;
+}
 .navbar-nav li a{ 
 column-gap: 56px !important;
 opacity: 0.8;
@@ -334,24 +340,12 @@ height: 100%;
 
 
 
-
 .cards {
   display: grid;
   align-items: center;
   justify-content: center;
   grid-gap: 1rem;  margin: 0 auto;
 }
-
-/* Screen larger than 600px? 2 column */
-/* @media (min-width: 600px) {
-  .cards { grid-template-columns: repeat(2, 1fr); }
-} */
-
-/* Screen larger than 900px? 3 columns */
-
-/* @media (min-width: 900px) {
-  .cards { grid-template-columns: repeat(3, 1fr); }
-} */
 
 .Features {
   background-color: #f9f9f9;
@@ -452,22 +446,10 @@ margin-top: 150px;
    }
 }
 
-/* Screen larger than 900px? 3 columns */
-/* @media (min-width: 900px) {
-  .WhoIsItFor .WhoisitForText{ 
-    grid-template-columns: repeat(3, 1fr); 
-  }
-} */
 
 /*...........................benefits.......................*/
 
 
-
-/* Screen larger than 900px? 3 columns */
-/* @media (min-width: 900px) {
-  .WhoIsItFor .col-lg-6{ 
-    grid-template-columns: repeat(3, 1fr); 
-  }} */
 
 .Benefits{ 
   margin-top: 100px;
@@ -841,18 +823,8 @@ margin: 40px 25px;
 .footer-social span{  
     cursor: pointer;
   }
-   /*..........*/
-   /* .smallboxes .row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-  }
-  
-  
-   */
+
+
   .Features-slider{ 
     display: none;
   }
@@ -904,62 +876,17 @@ margin: 40px 25px;
 
 
 
-
-/* @media (max-width: 992px){
-.cls_inner {
-    position: absolute;
-    right: 2%;
-    top: 40px;
-    background-color: transparent;
-    border: 0;
-}   }
-svg {
-  overflow: hidden;
-  vertical-align: middle;
-}
- */
-
-/* @media (max-width: 1130px) {
-  .cards.Features .card { 
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  .swiper-slide img{
-    width: 60%;
-  }
-  .smallboxes .Box p{ 
-    font-size: 14px;
-  }
-  .WhoIsItFor .container {
-    width: 500px;
-
-
-} 
-.Benefits .container{ 
-  width: 500px;
-}
-
-} */
-
-
-/* Smartphone Portrait and Landscape */
-/* @media only screen
-  and (min-device-width : 310px)
-  and (max-device-width : 780px){ 
-    .mobileShow {
-      display: inline;
-    }
-    .carousel-inner .carousel-item {
-      border: 1px solid red;
-      padding: 20px ;
-    }
-} */
-
-
 /*...responsive below 1000/.......*/
 
 
 @media (max-width: 1000px) {
+
+  .burgerMenu{
+    display: flex;
+  }
+  .menu-btn{
+    display: block;
+  }
   .BenefitsText h1 {
     display: block;
     margin-top: 40px;
@@ -1033,7 +960,12 @@ line-height: 39.6px;
 .WhoisitForText {
   margin-top: 0;
 }
+.WhoIsItFor .container{
+  width:  50% !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
 
+}
 .services-txt h1{
   font-size: 26px;
 } 
@@ -1052,6 +984,10 @@ display: block;
   height: 10%; 
 
  }
+
+ .menu-icon{ 
+  display: flex;
+}
 }   
 
 
@@ -1161,27 +1097,41 @@ display: block;
   width: 450px !important;
 }
 
-footer .row{ 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;  
-  gap: 10px 2em;
-  padding: 0px 50px;
 
-}
 .solid{ 
   width: 25rem !important;
 }
 .footer-last{
   display: inline;
 }
+footer .wrapper .row{  
+display: flex !important;
+flex-direction: column!important;
+justify-content: flex-start !important;
+align-items: flex-start;
+column-gap: 10px !important;
+}
+footer .eachbox3{
+  height: 100px;
+ 
+}
+footer .eachbox1{
 
+  height: 200px;
 }
 
+.mobile-version .swiper-wrapper{
+  margin-bottom: 20px;
+}
+}
 
 /*...responsive below 500*/
 
    
    @media (max-width: 500px){  
+    .solid{
+      width: 150px !important;
+    }
   .joinnowbtn {
       margin: 0 auto;
       width: auto;
@@ -1189,11 +1139,12 @@ footer .row{
    .services .container{
       max-width: 540px;
   }
-  footer .container {
+  /* footer .container {
       max-width: 540px;
-  }
+  } */
   
   .slider{ 
+   
     display: none !important;
   }
   .carousel.slide{
@@ -1239,6 +1190,9 @@ footer .row{
     font-weight: 700 !important;
 font-size: 24px !important;
 line-height: 28.8px !important;
+  }
+  .smallboxes{
+    margin-top: 200px !important;
   }
   .smallboxes .Box{
       width: 350px !important;
