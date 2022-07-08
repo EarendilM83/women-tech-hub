@@ -172,13 +172,13 @@ display: flex;
 }
 
 #radio1:checked ~ .first {
-  margin-left: -20%;
+  margin-left: 0;
 }
 #radio2:checked ~ .first {
-  margin-left: -40%;
+  margin-left: -20%;
 }
 #radio3:checked ~ .first {
-  margin-left: -60%;
+  margin-left: -40%;
 }
 
 /* auto navigation */
@@ -468,6 +468,7 @@ section .smalltitle{
   box-shadow: 0px 4px 56px rgba(0, 0, 0, 0.06);
   padding-bottom: 20px;
   padding-top: 28px;
+  margin: 20px auto;
 }
 .lastsection .lastshadowbox p {
   align-items: center;
@@ -482,7 +483,6 @@ section .smalltitle{
   color: white;
   border: none;
   font-family: "Poppins", sans-serif;
-  align-items: center;
 }
 .lastsection .lastshadowbox .lastbtn {
   padding-top: 34px;
@@ -548,11 +548,11 @@ footer {
   padding-bottom: 29px;
 }
 .bordertop {
-  width: 100%;
+  width: 1006px;
   height: 0px;
   opacity: 0.25;
   border: 1px solid #DBE3E6;
-  margin-top: 40px;
+  margin: 40px auto;
 }
 
 /* manual navigation */
